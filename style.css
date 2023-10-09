@@ -51,9 +51,76 @@ main {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 45px;
+    padding: 45px 45px 20px 45px;
     width: 540px;
     height: 400px;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+}
+
+.stats span,
+.stats span strong {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: hsl(225, 20%, 60%);
+    letter-spacing: 1.5px;
+}
+
+.stats h1 {
+    font-size: 39px;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.stats h1 small {
+    font-size: 15px;
+    font-weight: 800;
+    color: hsl(225, 20%, 60%);
+}
+
+.slider {
+    width: 100%;
+    margin-block: .5rem;
+}
+
+.billing {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-block: .7rem;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+}
+
+.fc_infos {
+    width: 50%;
+    margin-left: .5rem;
+}
+
+.fc_info {
+    padding-block: .3rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.fc_btn {
+    width: 50%;
+    background-color: red;
 }
 
 footer {
