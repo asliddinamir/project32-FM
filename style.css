@@ -16,12 +16,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     padding: 3rem 2rem 2rem 2rem;
 }
 
@@ -53,4 +54,20 @@ main {
     padding: 45px;
     width: 540px;
     height: 400px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    color: red;
+}
+
+@media(min-width:575px) {
+    footer {
+        position: absolute;
+        bottom: 10px;
+    }
 }
