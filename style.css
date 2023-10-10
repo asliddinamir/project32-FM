@@ -365,4 +365,8 @@ footer a {
     .fc_btn button {
         width: 100%;
     }
+
+    footer {
+        font-size: 11px;
+    }
 }
