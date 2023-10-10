@@ -21,7 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding: 3rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 2rem 2rem;
 }
 
 .heading {
@@ -200,6 +200,11 @@ main {
     color: hsl(15, 100%, 70%);
 }
 
+hr {
+    border: .1px solid hsla(225, 20%, 60%, 0.311);
+    width: 100%;
+    padding: 0;
+}
 
 .footer_container {
     display: flex;
@@ -215,12 +220,37 @@ main {
     padding-block: .3rem;
     display: flex;
     align-items: center;
-    gap: .4rem;
+    gap: 1rem;
+}
+
+.fc_info small {
+    font-size: 12px;
+    color: hsl(225, 20%, 60%);
+    font-weight: 600;
 }
 
 .fc_btn {
     width: 50%;
-    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fc_btn button {
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(226, 100%, 87%);
+    background-color: hsl(227, 35%, 25%);
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    padding: 12px 30px;
+    width: 70%;
+    transition: .3s ease;
+}
+
+.fc_btn button:hover {
+    color: #fff;
 }
 
 footer {
