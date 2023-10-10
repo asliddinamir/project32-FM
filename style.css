@@ -78,6 +78,7 @@ main {
     display: flex;
     align-items: center;
     gap: .4rem;
+    color: hsl(227, 35%, 25%);
 }
 
 .stats h1 small {
