@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -106,6 +107,7 @@ main {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    overflow: visible;
 }
 
 .slider:hover {
@@ -186,18 +188,23 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: auto;
+    padding-inline: .5rem;
     height: 19px;
     background-color: hsl(14, 92%, 95%);
     border-radius: 20px;
 }
 
-.discount p {
+.discount p:nth-of-type(1) {
     display: block;
     font-family: "Manrope", sans-serif;
     font-size: 10px;
     font-weight: 800;
     color: hsl(15, 100%, 70%);
+}
+
+.disMobile {
+    display: none;
 }
 
 hr {
@@ -262,9 +269,100 @@ footer a {
     color: red;
 }
 
-@media(min-width:575px) {
+@media(min-width:576px) {
     footer {
         position: absolute;
         bottom: 10px;
+    }
+}
+
+@media(max-width:575px) {
+    main {
+        padding: 0rem 1rem 2rem 1rem;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 25px 25px 20px 25px;
+    }
+
+    .fc_btn button {
+        width: 100%;
+    }
+}
+
+@media(max-width:516px) {
+    body {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .title {
+        font-size: 19px;
+    }
+
+    .heading p {
+        font-size: 13px;
+        margin-inline: 23%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .stats h1 {
+        font-size: 32px;
+    }
+
+    .stats span {
+        font-size: 12px;
+    }
+
+    .billing {
+        margin-left: 0;
+        gap: .5rem;
+        justify-content: end;
+    }
+
+    .disMobile {
+        display: block;
+        font-family: "Manrope", sans-serif;
+        font-size: 10px;
+        font-weight: 800;
+        color: hsl(15, 100%, 70%);
+    }
+
+    .discount p:nth-of-type(1) {
+        display: none;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .fc_infos {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fc_info {
+        justify-content: center;
+    }
+
+    .fc_btn {
+        width: 70%;
+        justify-self: start;
+        align-items: center;
+    }
+
+    .fc_btn button {
+        width: 100%;
     }
 }
